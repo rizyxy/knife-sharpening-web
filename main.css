@@ -1,0 +1,232 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0em;
+    padding: 0em;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1, h3 {
+    margin: 0%;
+}
+
+.main-article {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5),  rgba(0, 0, 0, 0.5)),url(/asset/main-article-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+nav {
+    padding-right: 1em;
+    padding-left: 2em;
+    padding-top: 2em;
+    padding-bottom: 1em; 
+}
+
+nav a {
+    color: white;
+    margin-right: 1.5em;
+    text-align: center;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: lightgray;
+}
+
+#logo:hover {
+    color: white;
+}
+
+.main-action {
+    padding-top: 12em;
+    padding-left: 5em;
+    padding-bottom: 17.5em;
+}
+
+.main-action h1, h3 {
+    color: white;
+}
+
+.main-action h1 {
+    font-size: xx-large;
+}
+
+.main-action h3 {
+    margin-top: 0.5em;
+    font-size: x-large;
+}
+
+#main-article-button {
+    background-color: red;
+    border: none;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 0.2em;
+    margin-top: 2em;
+    padding: 1.5em 3em;
+    text-decoration: none;
+}
+
+#main-article-button:hover {
+    animation: letter-space forwards;
+    animation-duration: 1s;
+    background-color: rgb(254, 108, 108);
+    cursor: pointer;
+}
+
+@keyframes letter-space {
+    from {
+        letter-spacing: 0.2em;
+    }
+    to {
+        letter-spacing: 0.4em;
+    }
+}
+
+.why-article {
+    background-color: rgb(241, 241, 241);
+    padding-top: 5em;
+    padding-bottom: 5em;
+    padding-left: 5em;
+    padding-right: 5em;
+}
+
+.why-row {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.why-col {
+    margin: 1em;
+}
+
+.how-article {
+    padding-top: 5em;
+    padding-bottom: 5em;
+    padding-left: 5em;
+    padding-right: 5em;
+}
+
+.how-row {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.how-col {
+    max-width: 20em;
+    margin: 1em;
+}
+
+.col-header {
+    text-align: center;
+}
+
+.col-body {
+    text-align: center;
+}
+
+.order-article {
+    background-color: rgb(241, 241, 241);
+    padding-top: 5em;
+    padding-bottom: 5em;
+    max-width: 100%;
+}
+
+.checked {
+    color: orange;
+}
+
+.rating {
+    margin-top: 2em;
+}
+
+.order-body {
+    background-color: white;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(63, 63, 63, 0.3) 0px 18px 36px -18px inset;
+    margin-top: 2em;
+    margin-left: 25em;
+    margin-right: 25em;
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+.order-body h4 {
+    margin-left: 2em;
+    margin-bottom: 4em;
+    text-align: left;
+}
+
+.order-body span {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(100, 100, 100, 0.3) 0px 18px 36px -18px inset;
+    margin-left: 0.7em;
+    margin-right: 0.7em;
+    padding: 1.3em;
+}
+
+.order-body p{
+    margin-top: 4em;
+    margin-left: 2em;
+    text-align: left;
+}
+
+#order-body-button {
+    background-color: red;
+    border: none;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 0.2em;
+    margin-top: 2em;
+    padding: 1.5em 3em;
+    text-decoration: none;
+}
+
+#order-body-button:hover {
+    animation: letter-space forwards;
+    animation-duration: 1s;
+    background-color: rgb(254, 108, 108);
+    cursor: pointer;
+}
+
+.knives-selector span:hover {
+    animation: raise forwards;
+    animation-duration: 1s;
+    cursor: pointer;
+}
+
+@keyframes raise {
+    from {
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(100, 100, 100, 0.3) 0px 18px 36px -18px inset;
+    }
+    to {
+        box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;    }
+}
+
+.info-article {
+    background-color: black;
+    padding-top: 3em;
+    padding-bottom: 3em;
+    padding-left: 3em;
+}
+
+.info-article p {
+    color: white;
+}
+
+@media screen and (max-width: 1200px) {
+    .order-body {
+        margin-left: 10em;
+        margin-right: 10em;
+    }
+
+}
+
+@media screen and (max-width: 800px) {
+    .order-body {
+        margin-left: 2em;
+        margin-right: 2em;
+    }
+
+}
